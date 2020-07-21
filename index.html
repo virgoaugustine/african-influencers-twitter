@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>African-influencers-twitter by virgoaugustine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">African-influencers-twitter</h1>
+      <h2 class="project-tagline">Twitter Users Segmentation</h2>
+      <a href="https://github.com/virgoaugustine/african-influencers-twitter" class="btn">View on GitHub</a>
+      <a href="https://github.com/virgoaugustine/african-influencers-twitter/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/virgoaugustine/african-influencers-twitter/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><strong>AFRICAN INFLUENCERS: TWITTER USERS SEGMENTATION</strong></p>
+<p><strong>INTRODUCTION</strong></p>
+<p>Companies are increasingly investing in promoting their products and services via digital marketing. They are therefore constantly searching for influencers to endorse or promote what they have to offer. This demand has led to the rise in popularity of social media influencers. These influencers companies often collaborate with do not necessarily have domain expertise in the products and services the companies offer. Their influence is the driving force needed to convince or attract potential customers.</p>
+<p>This report seeks to share insights on the top 100 influential twitter accounts in Africa from <a href="https://africafreak.com/100-most-influential-twitter-users-in-africa">Africafreak</a> and the top 36 government accounts from <a href="https://www.atlanticcouncil.org/blogs/africasource/african-leaders-respond-to-coronavirus-on-twitter/#east-africa">Atlantic Council</a>. Based on these insights, a company or brand interested in expanding its consumer reach to the African market can make informed decisions on which accounts will be the best to collaborate with.</p>
+<p>For this report, an average of the last 150 tweets per user was retrieved via the Twitter API. From each user and their tweets, key information such as follower count, following count, number of likes, and number of retweets were extracted. These are the metrics used in creating a score for each user in the following categories:</p>
+<ol>
+<li>Popularity score = Number of <em>Retweets</em> on tweets + Number of <em>Likes</em> on tweets</li>
+<li>Reach score = Number of followers – Number of people they follow</li>
+<li>Relevance score = Number of Retweets</li>
+</ol>
+<p><strong>ANALYSIS</strong></p>
+<p>In order to better understand the influence of accounts in each category, preliminary analysis of the data was carried out in two sections; government officials and influencers.</p>
+<p><strong>Government Accounts</strong></p>
+<p>For the 36 African government twitter accounts, all were active.</p>
+<ul>
+<li>The average popularity score was 95,482, reach score 458,035 and relevance score 7,591.</li>
+<li>Ghana's president @NAkufoAddo was the most popular account with a popularity score of <em>744,289</em>.</li>
+<li>However Nigeria's president <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/mbuhari/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/mbuhari">@mbuhari</a> had the highest reach score of 3,271,644. This could be due to Nigeria being the largest population in Africa.</li>
+<li>Rwanda's president <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/PaulKagame/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/PaulKagame">@PaulKagame</a> was consistently the second highest in popularity, reach and relevance with scores of 576,378, 1,983,430, and 55,999 respectively.</li>
+</ul>
+<p><strong>Influencers' Accounts</strong></p>
+<p>Of the 100 accounts, 7 were either inactive or suspended so analysis was based on 93 accounts.</p>
+<ul>
+<li>The average popularity score was 19,689, reach score 426,456 and relevance score 2,032.</li>
+<li>South Africa's <a class="user-mention" data-hovercard-type="user" data-hovercard-url="/users/trevornoah/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="https://github.com/trevornoah">@trevornoah</a> was the most popular account with a popularity score of 1,295,567. He also had the most reach with a score of 10,806,223.</li>
+</ul>
+<p><strong>Top 5 Unique Hashtags</strong></p>
+<p>The top 5 unique hashtags returned from the collection of the top 10 retweeted tweets of each user in both categories were covid19, burundi, audi, Africa, and Somalia.</p>
+<p>Some hashtags like covid19 which had variations such as corona, coronavirus, covid-19 were converted to 'covid19' for uniformity.</p>
+<p><img src="https://github.com/virgoaugustine/african-influencers-twitter/blob/master/graph.png" alt=""> Below is a bar plot that displays the fraction of influencers and government officials by hashtag.</p>
+<p>From the chart, influencers and government officials rarely share mutual topics(health, fashion, art, politics, etc.).</p>
+<p>However, in times of matters affecting the world such as #covid19, there's a significant similarity in the topic discussion between influencers and government officials.</p>
+<p>Also, government accounts' tweets are more centered around politics, announcements and news about the countries they belong to and influencers' tweets are over a broad range of topics.</p>
+<p><strong>CONCLUSION</strong></p>
+<p>The accounts of government officials in Africa are created with a pre-existent purpose they seek to serve. They are not better suited for promotions or endorsements of products and services offered by a brand or company. These accounts serve a purpose of information dissemination and hardly interact in an informal manner with other twitter accounts or engage in topics/hashtags outside of news, politics or global affairs. For the influencers category, companies have a variety of influencers to collaborate with from celebrities to bloggers. Most of these accounts are not rigid in terms of the content they broadcast from their accounts. One interesting thing to note too is, majority of influencers' accounts are from South Africa based on their locations on their profiles.</p>
+<p>Some limitations encountered during this analysis were:</p>
+<ol>
+<li>Due to twitter API's limit and relatively low hardware resources, the dataset size is small.</li>
+<li>Twitter's API does not handle retrieving replies from a tweet/conversation. It does not also have a way to count the number of times a user was mentioned in other tweets, except to use the search method of the API, which does not return queries. Therefore retweet count was used as a proxy for measuring relevance score.</li>
+</ol>
+<p><strong>REFERENCES</strong></p>
+<ul>
+<li>
+<p><a href="http://twitter.mpi-sws.org/icwsm2010_fallacy.pdf"><strong>http://twitter.mpi-sws.org/icwsm2010_fallacy.pdf</strong></a></p>
+</li>
+<li>
+<p><strong><a href="https://grin.co/blog/types-of-social-media-influencers/">https://grin.co/blog/types-of-social-media-influencers/</a></strong></p>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/virgoaugustine/african-influencers-twitter">African-influencers-twitter</a> is maintained by <a href="https://github.com/virgoaugustine">virgoaugustine</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
